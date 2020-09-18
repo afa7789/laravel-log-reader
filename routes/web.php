@@ -1,5 +1,5 @@
 <?php
-Route::group(['namespace' => 'Haruncpi\LaravelLogReader\Controllers', 'middleware' => ['web','auth']], function () {
+Route::group(['namespace' => 'Haruncpi\LaravelLogReader\Controllers', 'middleware' => ['web']], function () {
 
     Route::get(config('laravel-log-reader.view_route_path'), 'LogReaderController@getIndex');
     Route::post(config('laravel-log-reader.view_route_path'), 'LogReaderController@postDelete');
